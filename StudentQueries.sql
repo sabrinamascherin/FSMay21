@@ -1,0 +1,1 @@
+INSERT INTO students (first_name, last_name, section, gpa, nationality) VALUES ('Sabrina', 'Mascherin', 1, 3.0, 'Italian')
