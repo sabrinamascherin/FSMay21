@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+        <script>
+            $(document).ready(function(){
+                let dom = document.getElementById("content"); //Vanilla Javascript
+                console.log(dom.innerHTML);
+
+                console.log($('#content').html()); //Jquery
+                $('#content').css("background-color", "lightblue").css("color", "red");
+                $("#content").css({
+                    'background-color': 'lightblue',
+                    'color':'red'
+                });
+
+                $(".item").css("background-color", "red");
+            });
+        </script>
+
+    </head>
+    <body>
+
+        <div id="content">Hello World</div>
+        <div class="item">Content 1</div>
+        <div class="item">Content 2</div>
+        <div class="item">Content 3</div>
+
+
+    </body>
+</html>

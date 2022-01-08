@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="feedback.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Feedback</title>
+
+    <style>
+      .mb-3[date-error] .form-label {
+        border-color: #c92432;
+        color: #c92432;
+        background: #fffafa;
+      }
+
+      .mb-3[date-error]::after {
+        content: attr(data-error);
+        font-size: 0.85cm;
+        color: #c92432;
+        display: block;
+        margin: 18px 0;
+      }
+    </style>
+
+  </head>
+
+  <body>
+
+    <!--Jumbotron-->
+    <div class="container">
+    <div class="jumbotron">
+      <h1>Photo Album</h1>
+    </div>
+    <!--End of Jumbotron-->
+    
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">Photo Album</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="feedback.html">Feedback</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="catalog.html">Catalog</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!--Navbar End-->
+
+    <div id="error"></div>
+
+      <form id="form" action="/" method="GET">
+
+        <!--Username-->
+        <div class="mb-3" data-error="Must be at least 6 characters.">
+          <label for="username" class="form-label">Username</label>
+          <input type="text" class="form-control" id="username">
+          <div id="validationServer03Feedback" class="invalid-feedback">
+          </div>
+          <div id="usernameHelp" class="form-text">Enter your name.</div>
+        </div>
+
+        <!--Image Title-->
+        <div class="mb-3" data-error="Cannot be empty.">
+          <label for="image" class="form-label">Image Title</label>
+          <input type="text" class="form-control" id="image">
+          <div id="validationServer03Feedback2" class="invalid-feedback">
+          </div>
+          <div id="imageHelp" class="form-text">Enter image title.</div>
+        </div>
+
+        <!--Comment-->
+        <div class="mb-3" data-error="Cannot be empty.">
+            <label for="comment" class="form-label">Comment</label>
+            <input type="text" class="form-control" id="comment">
+            <div id="validationServer03Feedback3" class="invalid-feedback">
+            </div>
+            <div id="commentHelp" class="form-text">Enter your comment.</div>
+        </div>
+
+        <button type="button" class="btn btn-dark" id="submit">Submit</button>
+      </form>
+  </body>
+</html>

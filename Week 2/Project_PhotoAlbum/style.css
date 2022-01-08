@@ -1,0 +1,61 @@
+body{
+    background-color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h2{
+    padding-top: 30px;
+}
+
+#container{
+    background-color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#home{
+    color:lightgrey
+}
+
+#form{
+    padding-top: 30px;
+    color: whitesmoke;
+}
+
+#card-body{
+    background-color: lightgrey;
+}
+
+.jumbotron{
+    color: whitesmoke;
+    text-align: center;
+    padding: 15px;
+}
+
+.navbar navbar-expand-lg navbar-dark bg-dark{
+    padding: 15px;
+}
+
+.collapse navbar-collapse{
+    padding: 15px;
+}
+
+.col{
+    padding: 15px;
+}
+
+@media( max-width: 1030px) {
+    body{
+        background-color: whitesmoke;
+        color: black;
+    }
+    p{
+        color:black;
+    }
+    h2{
+        color: black;
+    }
+    label{
+        color: black;
+    }
+}
+

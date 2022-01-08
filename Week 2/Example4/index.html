@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        <div id="content">Hello from the other side</div>
+        <div class="item">Content 1</div>
+        <div class="item">Content 2</div>
+        <div class="item">Content 3</div>
+
+        <form>
+            <p>
+                <label>Title</label><br>
+                <input type="text" name="title" id="title">
+            </p>
+
+            <button type="button" onclick="validate()">Submit</button>
+        </form>
+
+
+        <script>
+            function validate()
+            {
+                //let titleDom = document.getElementById('title')
+                let titleDom = document.querySelector('input[name=title]');
+                if(titleDom.value == "")
+                {
+                    alert("You must enter a title");
+                    return;
+                }
+
+                console.log(titleDom.value)
+            }
+
+            //getElementById
+            let divDom = document.getElementById("content");
+            console.log(divDom.innerHTML);
+            divDom.style.backgroundColor = "lightblue";
+            divDom.style.textAlign = "center";
+
+            //getElementByClass
+            let elementDoms= document.getElementsByClassName("item"); //Returns array of DOMs
+            for(let i = 0; i < elementDoms.length; i++)
+            {
+                let dom = elementDoms[i];
+                dom.style.backgroundColor = "red";
+            }
+
+            //getElementsByTagName
+            elementDoms = document.getElementsByTagName("div"); //Returns array of DOMs
+            for(let i = 0; i < elementDoms.length; i++)
+            {
+                let dom = elementDoms[i];
+                dom.style.color = "pink";
+            }
+
+            //querySelector
+            divDoms = document.querySelector('#content'); //Returns the first item it finds
+            divDom.innerHTML = "Welcome to Robogarden";
+            
+            //querySelectorAll
+            elementDoms = document.querySelectorAll('.item');
+            for(let i = 0; i < elementDoms.length; i++)
+            {
+                let dom = elementDoms[i];
+                dom.style.border = "1px solid black";
+            }
+        </script>
+
+    </body>
+</html>
