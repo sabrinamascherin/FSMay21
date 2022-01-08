@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function calculatorGPA(grades)
+            {
+                //Caculate total sum of all the grades
+                let sum = 0;
+                for(let i = 0; i < grades.lengths; i++)
+                {
+                    let gradeValue = 0;
+
+                    //Convert alpha grade to number
+                    if(grades[i] == "A")
+                    {
+                        gradeValue = 100;
+                    }
+                    else if(grades[i] == "B")
+                    {
+                        gradeValue = 80;
+                    }
+                    else if(grade[i] == "C"){
+                        gradeValue = 70;
+                    }
+
+                    sum = sum + gradeValue;
+                }
+
+                //Caculate GPA
+                let gpa = sum / grades.length;
+
+                //Convert number gpa to alphabet
+                //&& is AND. || is OR
+                let finalGrade = "";
+                if(gpa >=70 && gpa <=79)
+                {
+                    //left and right must be true with &&
+                    finalGrade = "C";
+                }
+                else if(gpa >= 80 && gpa <=99)
+                {
+                    finalGrade = "B";
+                }
+                else if(gpa == 100){
+                    finalGrade = "A";
+                }
+
+                return finalGrade;
+            }   
+
+            let letterGrades = ["A", "B", "A"];
+            let result = calculatorGPA(letterGrades);
+            document.write("Your grade is " + result);
+        </script>
+    </head>
+
+    <body>
+
+    </body>
+</html>

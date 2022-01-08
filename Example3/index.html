@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            P{
+                background-color: rgb(46, 146, 46);
+            }
+
+            #sub_section{
+                font-size: 50px;
+            }
+
+            .content{
+                border: 3px solid black;
+            }
+
+            a{
+                text-decoration: underline;
+                color: red;
+            }
+
+            a:hover{
+                background-color: magenta;
+                color: #fff
+            }
+
+            #sub_section span i{
+                color:blue;
+            }
+
+            #main_section, #sub_section{
+                background-color: tomato;
+            }
+
+            .box{
+                width: 250px;
+                height: 150px;
+                border: 1px solid #000000;
+                padding: 15px; /*left right top bottom*/
+                padding: 15px;
+                padding-right: 20px;
+                padding-top: 25px;
+                margin: 20px30px 50px 100px; /*top right bottom left */
+            }
+        </style>
+    </head>
+
+    <body>
+        <p id="main_section" class="content"style="text-align: center; text-decoration: underline;">Hello World</p>
+
+        <p id="sub_section">Hello from the <span>other side <i>Help</i></span>.</p>
+
+        <a href="http://google.ca" class="content">Go to Google</a>
+
+        <div class="box">Box A</div>
+        <div class="box">Box B</div>
+        <div class="box">Box C</div>
+
+        <table>
+            <caption><strong>List of Celebrities</strong></caption>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Occupation</th>
+                <th>Location</th>
+            </tr>
+
+            <tr>
+                <td>John Wick</td>
+                <td>50</td>
+                <td>Actor</td>
+                <td>US</td>
+            </tr>
+
+            <tr>
+                <td>Michael Jackson</td>
+                <td>60</td>
+                <td>Singer</td>
+                <td>US</td>
+            </tr>
+
+            <tr>
+                <td>Jennifer Lopez
+                <td>50</td>
+                <td>Singer/Actor</td>
+                <td>US</td>
+            </tr>
+        </table>
+    </body>
+</html>

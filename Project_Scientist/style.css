@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0%;
+}
+
+body{
+    font-family: Arial, Helvetica, times new roman;
+    font-size: 14px;
+    background-color: rgb(236, 230, 230);
+    padding-inline: 30px;
+}
+
+th{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', times new roman;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 15px;
+}
+
+td{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f0f0f0;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+h3{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#content_section{
+    margin: 20;
+}
+
+#header{
+    background-color: rgba(145, 9, 9, 0.89);
+    color:white;
+    padding-top: 30px;
+    padding-bottom: 30px; 
+    text-align: center;
+    font-family: fantasy;
+    font-size: 40px;
+}
+
+#profilesection{
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-style: solid;
+    border-width: thin;
+    border-color:rgba(145, 9, 9, 0.89);
+}
+
+#paragraph{
+    padding-top: 10px;
+    padding-bottom: 10px; 
+    padding-right: 200px;
+    font-family: times new roman;
+    font-size: 20px;
+}
+
+#upcoming_events{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    display: block;
+    clear: both;
+    font-family: Impact;
+    font-size: 20px;
+}
+
+#table{
+    border-color: rgba(145, 9, 9, 0.89);
+    border-style: solid;
+    border-width: thin;
+    text-align: left;
+    background-color: #f0f0f0;
+    }
+
+#button{
+    text-align: center;
+}
+
+#articles{
+    font-family: Impact;
+    font-size: 20px;
+    text-align: left;
+    border-style: solid;
+    border-width: thin;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-color: rgba(145, 9, 9, 0.89);
+}
+#article_content{
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding: 10px;
+    }
+
+#favorite_scientist{
+    font-family: Impact;
+    font-size: 20px;
+    border-width: thin;
+    border-style: solid;
+    border-color: rgba(145, 9, 9, 0.89);
+}
